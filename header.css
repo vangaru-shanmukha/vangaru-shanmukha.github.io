@@ -1,0 +1,33 @@
+.header {
+    background-color: black;
+    border: 1px solid black;
+}
+
+.header ul {
+    text-align: center;
+}
+
+.header li { 
+    display: inline-block;
+    list-style-type: none;
+}
+
+.header a {
+    border: 2px solid white;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.header a:hover {
+    background-color: white;
+    color: black;
+}
+
+.header ul li a.active {
+    background-color: white;
+    color: black;
+}
