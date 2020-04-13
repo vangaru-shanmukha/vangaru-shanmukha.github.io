@@ -1,6 +1,7 @@
 .header {
     background-color: black;
     border: 1px solid black;
+    margin: auto;
 }
 
 .header ul {
@@ -31,3 +32,20 @@
     background-color: white;
     color: black;
 }
+
+.header .dropdown {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .header li {
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .header a {
+        border : none;
+    }
+}
+
+
