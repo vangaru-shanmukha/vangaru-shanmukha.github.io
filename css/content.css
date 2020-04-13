@@ -17,7 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: auto;
+    overflow: visible;
 }
 
 .contact {
@@ -129,8 +129,8 @@ table,td {
 
 @media screen and (max-width: 600px) {
     .image {
-        align-items: unset;
-        justify-content: unset;
+        align-items: center;
+        justify-content: center;
     }
     .contact {
         align-items: unset;
