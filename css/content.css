@@ -20,6 +20,19 @@
     overflow: auto;
 }
 
+.contact {
+    grid-area: 2 / 2 / 3 / 3;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+table,td {
+    padding: 10px;
+}
+
 .blurb-heading {
     grid-area: 1 / 1 / 2 / 2;
     z-index: -1;
@@ -109,18 +122,34 @@
     border-radius: 5px;
 }
 
-#top:hover {
+#btn:hover {
     background-color: white;
     color: black;
 }
 
 @media screen and (max-width: 600px) {
     .image {
-        align-items: flex-end;
-        justify-content: flex-end;
+        align-items: unset;
+        justify-content: unset;
+    }
+    .contact {
+        align-items: unset;
+        justify-content: unset;
     }
     .blurb {
         align-items: flex-end;
         justify-content: flex-end;
     }
+}
+
+.gallery {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: 300px repeat(2, 200px);
+    grid-gap: 5px;
+}
+
+.item1 {
+    grid-area: 1 / 1 / 2 / -1;
 }
