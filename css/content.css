@@ -4,13 +4,6 @@
     grid-template: 1fr 2fr 1fr / 1fr 3fr 1fr;
     grid-gap: 5px;
 }
-/*.content > div {
-    display: flex;
-    background-color: blue;
-    align-items: center;
-    color: black;
-    justify-content: center;
-}*/
 .image {
     grid-area: 2 / 2 / 3 / 3;
     z-index: -1;
@@ -140,9 +133,13 @@ table,td {
         align-items: flex-end;
         justify-content: flex-end;
     }
+    .links li{
+        display: block;
+        margin-top: 10px;
+    }
 }
 
-.gallery {
+#gallery {
     margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -153,3 +150,174 @@ table,td {
 .item1 {
     grid-area: 1 / 1 / 2 / -1;
 }
+
+.body {
+    margin-top: 5%;
+    justify-content: center;
+    display: flex;
+}
+
+.body table {
+    align-self: center;
+}
+
+.body input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.body button {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#editDiv button,#deleteDiv button,#addDiv button {
+    width: 25%;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.body button:hover {
+    font-weight: bolder;
+}
+
+.body input[type=text]:focus {
+    color: red;
+}
+
+#name-error {
+    color: red;
+    display: none;
+    text-align: right;
+}
+
+#email-error {
+    color: red;
+    display: none;
+    text-align: right;
+}
+
+.links ul {
+    text-align: center;
+}
+
+.links li { 
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#editDiv, #deleteDiv {
+    display: none;
+    margin: 0 20px;
+}
+
+#addDiv {
+    display: flex;
+    justify-content: center;
+}
+
+#edit-form, #add-form {
+    display: none;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+#edit-form input[type=text],input[type=date], textarea,
+#add-form input[type="text"],input[type=date], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#edit-form button, #add-form button {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#editDiv button:hover, #addDiv button:hover, #deleteDiv button:hover {
+    color : white;
+    font-weight: bold;
+    background-color: black;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-content button {
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .modal-content button:hover {
+      color : black;
+      border : 1px solid black;
+      font-weight: bold;
+      background-color: white;
+  }
+  

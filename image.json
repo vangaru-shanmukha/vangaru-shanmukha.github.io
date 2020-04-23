@@ -1,0 +1,52 @@
+var gallery={
+	"images": [
+			{	
+				"src" : "./media/item2.jpg",
+				"width" : "200px",
+				"height" : "200px",
+				"date" : "2020-04-22",
+				"name" : "sea view",
+				"alt" : "sea view"
+			},
+			{
+				"src" : "./media/item3.jpeg",
+				"width" : "200px",
+				"height" : "200px",
+				"date" : "2020-04-22",
+				"name" : "mountain falls",
+				"alt" : "mountain falls"
+			},
+			{
+				"src" : "./media/item4.jpg",
+				"width" : "200px",
+				"height" : "200px",
+				"date" : "2020-04-22",
+				"name" : "towers",
+				"alt" : "towers"
+			},
+			{
+				"src" : "./media/item5.jpeg",
+				"width" : "200px",
+				"height" : "200px",
+				"date" : "2020-04-22",
+				"name" : "destruction",
+				"alt" : "destruction",
+			},
+			{
+				"src" : "./media/item6.jpg",
+				"width" : "200px",
+				"height" : "200px",
+				"date" : "2020-04-22",
+				"name" : "cool towers",
+				"alt" : "cool towers"
+			},
+			{
+				"src" : "./media/item7.jpg",
+				"width" : "200px",
+				"height" : "200px",
+				"date" : "2020-04-22",
+				"name" : "towers",
+				"alt" : "towers"
+			}
+	]
+};

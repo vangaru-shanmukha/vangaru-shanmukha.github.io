@@ -14,27 +14,30 @@
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html" class="active">Contact</a></li>
             <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="admin.html">Admin Gallery</a></li>
         </ul>
     </div>
-    <div class = "content">
-        <div class = "contact">
-            <table>
-                <tbody>
-                    <tr>
-                        <td><img src = "./media/phone.png" width="30px" height="30px"></td>
-                        <td>+91 7013450458</td>
-                    </tr>
-                    <tr>
-                        <td><img src = "./media/mail.jpg" width="30px" height="30px"></td>
-                        <td>shanmukha.vangaru@zemosolabs.com</td>
-                    </tr>
-                    <tr>
-                        <td><img src = "./media/linkedin.png" width="30px" height="30px"></td>
-                        <td><a href="https://www.linkedin.com/in/shanmukha-vangaru-b77b7318b">Linked In</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+    <div class = "body">
+        <form>
+            <label>Name</label><br>
+            <input type="text" id="name" name="name" placeholder="Name" onclick="removeNameError()" required><br>
+            <label id="name-error">Enter a valid name</label>
+            <label>Email</label><br>
+            <input type="text" id="email" name="email" placeholder="email" onclick="removeEmailError()" required><br>
+            <label id="email-error">Enter a valid email</label>
+            <label>Message</label><br>
+            <textarea id="message" name="message" placeholder="write message" rows="10" cols="50" required></textarea><br>
+            <button onclick="validate()">Send Message</button><br>
+        </form>
     </div>
+    <div class="links">
+        <ul>
+            <li><img src = "./media/phone.png" width="30px" height="30px">+91 7013450458</li>
+            <li><img src = "./media/mail.jpg" width="30px" height="30px">shanmukha.vangaru@zemosolabs.com</li>
+            <li><a href="https://www.linkedin.com/in/shanmukha-vangaru-b77b7318b" target="_blank"><img src = "./media/linkedin.png" width="30px" height="30px"></a></li>
+        </ul>
+        </p>
+    </div>
+    <script type="text/javascript" src="./script/script.js"></script>
 </body>
 </html>

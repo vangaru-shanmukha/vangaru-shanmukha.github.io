@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/content.css">
+    <script type="text/javascript" src="image.json"></script>
+    <title>Admin Gallery</title>
+</head>
+<body onload="loadImages()">
+    <div class = "header">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="admin.html" class="active">Admin Gallery</a></li>
+        </ul>
+    </div>
+    <button onclick="navigate()" id="btn" title="navigate to top of the page">Top</button>
+    <div id = "editDiv">
+        <button id="edit" onclick="edit()">Edit</button>
+    </div>
+    <div id = edit-form>
+        <form>
+            <label>Name</label><br>
+            <input type="text" id="name" name="name" placeholder="Name" required><br>
+            <label>URL</label><br>
+            <input type="text" id="url" name="url" placeholder="url" required><br>
+            <label>Information</label><br>
+            <textarea id="message" name="message" placeholder="write message" rows="10" cols="50" required></textarea><br>
+            <label>Uploaded date</label><br>
+            <input type="date" name="date" id="date" required><br>
+            <button onclick="editForm()">Save</button><br>
+        </form>
+    </div>
+    <div id = "addDiv">
+        <button id="Add" onclick="add()">Add</button>
+    </div>
+    <div id = "add-form">
+        <form>
+            <label>Name</label><br>
+            <input type="text" id="name1" name="name1" placeholder="Name" required><br>
+            <label>URL</label><br>
+            <input type="text" id="url1" name="url1" placeholder="url" required><br>
+            <label>Information</label><br>
+            <textarea id="message1" name="message1" placeholder="write message" rows="10" cols="50" required></textarea><br>
+            <label>Uploaded date</label><br>
+            <input type="date" name="date1" id="date1" required><br>
+            <button onclick="addForm()">Save</button><br>
+        </form>
+    </div>
+    <div id = "deleteDiv">
+        <button id="delete" onclick="del()">Delete</button>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Are you sure to delete this image ?</p>
+          <img src="#" alt="image" width="100px" height="100px" id="modalImage"><br>
+          <button id="confirm">Yes</button>
+          <button id="no">No</button>
+        </div>
+    </div>
+    <div id = "gallery">
+        
+    </div>
+    <script type="text/javascript" src="./script/script.js"></script>
+</body>
+</html>
