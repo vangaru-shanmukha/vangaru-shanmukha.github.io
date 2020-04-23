@@ -211,7 +211,9 @@ function addForm() {
             "name" : document.getElementById("name1").value,
             "src" : document.getElementById("url1").value,
             "alt" : document.getElementById("message1").value,
-            "date" : document.getElementById("date1").value
+            "date" : document.getElementById("date1").value,
+            "width" : "200px",
+            "height" : "200px"
         }
         var images = JSON.parse(localStorage.getItem("images"));
         images.push(image);
